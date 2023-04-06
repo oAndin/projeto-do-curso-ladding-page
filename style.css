@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Schibsted+Grotesk:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; 
+    font-family: 'Roboto Condensed', sans-serif;
+    /* 
+    Poppins 
+    moontsprot
+    roboto
+    open sons */
+}
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    
+
+    background-color: rgb(0, 0, 0);
+}
+header nav ul  {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+header nav ul a {
+    display: block;
+    line-height: 40px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+header nav ul li {
+    position: relative;
+}
+header nav ul li a.loginBtn {
+    border: 1px solid #ffffff;
+    padding: 0 20px;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+header nav ul li a.loginBtn:hover {
+    background-color: #ffffff;
+    color: black;
+}
+header .logo{
+    color: #ffffff;
+}
+header nav ul ul {
+    position: absolute;
+    display: block;
+    padding: 0 15px;
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(78, 78, 78);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
+}
+header nav ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+.Schibsted {
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
