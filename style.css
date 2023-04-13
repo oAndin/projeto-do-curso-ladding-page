@@ -13,19 +13,20 @@
     roboto
     open sons */
 }
+
+body{
+    max-width: 1920px;
+    max-height: 1280px;
+}
+
 header {
     width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 0 60px;
-    background-color: rgb(0, 0, 0);
-}
-header .logo {
     
 
-}
-body {
-    background-color: crimson;
+    background-color: rgb(0, 0, 0);
 }
 header nav ul  {
     display: flex;
@@ -53,8 +54,8 @@ header nav ul li a.loginBtn:hover {
     color: black;
 }
 header .logo{
-
     color: #ffffff;
+    
 }
 header nav ul ul {
     position: absolute;
@@ -75,4 +76,80 @@ header nav ul li:hover ul {
 }
 .Schibsted {
     font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+
+
+#banner {
+    width: 100%;
+    height: calc(100vh - 68px);
+    overflow: hidden;
+    position: relative;
+}
+
+#banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #000000, #00000025);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#banner img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+#banner .conteudo {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 50px;
+    backdrop-filter: blur(4px);
+}
+
+#banner .conteudo h1 {
+    font-size: 46px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+#banner .conteudo p {
+    color: #ffffff;
+    margin-bottom: 26px;
+}
+
+#banner .conteudo a{
+    display: inline-block;
+    border: 2px solid #ffffff;
+    line-height: 40px;
+    padding: 26px;
+    color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner .conteudo a::after {
+    content: "";
+    width: 0%;
+    height: 0%;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff80;    
+}
+
+#banner .conteudo a:active::after {
+    width: 100px;
+    height: 100px;
+    opacity: 0%;
+    transition: all 400ms ease;
 }
