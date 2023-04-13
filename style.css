@@ -24,9 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 60px;
-    
-
-    background-color: rgb(0, 0, 0);
+    background-color: #0D0D0D;
 }
 header nav ul  {
     display: flex;
@@ -74,6 +72,7 @@ header nav ul li:hover ul {
     opacity: 1;
     visibility: visible;
 }
+
 .Schibsted {
     font-family: 'Schibsted Grotesk', sans-serif;
 }
@@ -85,6 +84,7 @@ header nav ul li:hover ul {
     height: calc(100vh - 68px);
     overflow: hidden;
     position: relative;
+    z-index: -1 ;
 }
 
 #banner::after{
@@ -152,4 +152,103 @@ header nav ul li:hover ul {
     height: 100px;
     opacity: 0%;
     transition: all 400ms ease;
+}
+
+#sobre {
+    height: 100vh;
+    padding: 60px 0;
+    background-image: url("./src/imagens/wave1.svg"), url("./src/imagens/wave2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom, top;
+    display: flex;
+    align-items: center;
+    /* background-color: #BF9926; */
+}
+
+/* #sobre {
+    background-image: url("./src/imagens/wave1.svg");
+    transform: scaleX(-1);
+} */
+
+#sobre .container {
+    padding: 0 120px;
+}
+
+#sobre h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 56px;
+}
+
+#sobre h2 + p {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+#sobre ul {
+    display: flex;
+    margin-top: 36px;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#sobre ul li {
+    padding: 26px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #00000065;
+    background-color: #ffffff;
+}
+
+#sobre ul li .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #999999;
+    margin-bottom: 16px;
+}
+#sobre ul li h5 {
+    font-size: 20px;
+}
+
+#depoimentos {
+    padding: 60px 0;
+}
+#depoimentos .container {
+    padding: 0 120px;
+}
+#depoimentos h2 {
+    font-size: 48px;
+    text-align: center;
+}
+#depoimentos ul {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+#depoimentos ul li {
+    padding: 26px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #00000030;
+}
+
+#depoimentos ul li h5 {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#depoimentos ul li h5 .foto {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #999999;
+}
+
+footer {
+    position: sticky;
+    width: 100%;
+    height: 10rem;
+    background-color: #0D0D0D;
 }
