@@ -52,6 +52,9 @@ header nav ul li a.loginBtn:hover {
     color: black;
 }
 header .logo{
+    display: flex;
+    align-items: center;
+    /* font-size: 3rem; */
     color: #ffffff;
     
 }
@@ -247,8 +250,99 @@ header nav ul li:hover ul {
 }
 
 footer {
-    position: sticky;
-    width: 100%;
-    height: 10rem;
-    background-color: #0D0D0D;
+    padding: 4rem 0;
+    /* width: 100%;
+    height: 100%; */
+    color: #ffffff;
+    background-color: #000000;
+}
+footer p {
+    color: #ffffff;
+}
+
+footer .container {
+    padding: 0 8rem;
+    display: flex;
+    gap: 3.5rem;
+    
+}
+
+footer .item {
+    flex: 1;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+footer .item:nth-child(1) ul {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+footer .item:nth-child(1) ul li i{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #00000025;
+    line-height: 2.5rem;
+    transition-duration: 0.2s;
+    
+}
+
+footer .item:nth-child(1) ul li i:hover{
+    background-color: #ffffff;
+    color: #263440;
+}
+
+footer .item:nth-child(2) ul{
+    margin-top: 1rem;
+}
+footer .item:nth-child(2) ul li a{
+    line-height: 2rem;
+    /* color: #00000080; */
+    transition-duration: 0.2s;
+}
+footer .item:nth-child(2) ul li a:hover{
+    color: #ffffff;
+    padding: 1rem;
+}
+
+footer .wtt {
+    display: flex;
+    gap: 1rem;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1.5rem;
+    color: #ffffff;
+    background-color: #25D366;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+footer .wtt:hover {
+    background-color: #1da850;
+}
+
+footer .wtt i {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+footer .container + h6 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
 }
